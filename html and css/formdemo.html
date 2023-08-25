@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="signup.html"method="GET"enctype="multipart/form-data">
+        <div>
+            <!-- <label for="username">UserName</label> -->
+            <input type="text"username" id="username"placeholder="username",maxlength=""required>
+        </div>
+        <div>
+            <!-- <label for="password">Password</label> -->
+            <input type="password"name="password"id="password"placeholder="password"minlength="8"required>
+        </div>
+        <div>
+            <label for="yearofbirth">yearofbirth</label>
+            <input type="number"name="yearofbirth"id="yearofbirth"maxlength="4"min="1900"step='2'>
+        </div>
+        <div>
+            <label for="dateofbirth">yearofbirth</label>
+            <input type="date"name="dateofbirth"id="dateofbirth"min="1900-10-10">
+        </div>
+        <div>
+            <label for="About">About</label>
+            <textarea name="About" id="About" cols="30" rows="10">About me</textarea>           <!--Its better to give without columns and rows-->
+        </div>
+        <div>
+            <input type="checkbox"name="smsalert"id="smsalert">
+            <label for="smsalert">SMSAlert</label>
+        </div>
+        <div>
+            <input type="radio"name="gender"id="male"value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio"name="gender"id="female"value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label>State</label>
+            <select name="state" id="state"label="state">     <!--use "multiple" for selecting multiple states-->
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Andhra">Andhra</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+        </div>
+        <!-- <button type="submit">submit</button> -->
+        <input type="image"src="submit-button-png-picture.png"width="90">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

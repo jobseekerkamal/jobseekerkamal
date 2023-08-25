@@ -1,0 +1,106 @@
+
+h1,h3{
+    color:orange !important;  /*important means it gives style even specific keywords are given*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2 em;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    text-transform:capitalize;
+    text-decoration: none;
+    letter-spacing: 1.5em;
+    word-spacing: .5em;
+    /* text-align: right; */
+    text-indent: -9999px;
+
+}
+
+p{
+    color:purple;  
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-size:1em;          /* em means 16px*/
+                            /* font is $599*/    /*comment*/
+}
+
+
+.doc{
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 50px;
+    color: black;
+    /* text-shadow: 2px 6px 2px gray; */
+}
+
+.doc::first-letter{                       /*doc::first-letter->pseudocode*/
+    font-size: 2em;
+}
+
+p[class]{
+    color:orange;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    color:pink;
+}
+
+a:active{
+    color:black;
+}
+
+a:focus{
+    color:brown;    
+}
+
+body{
+    font-size: 1.5 em;   /* if size i s 1.5 em i.e head size will be doubled if 2em is given*/
+}
+
+/* *{
+    color:blue;
+}    "*" for all tags */
+
+#studydiv{
+    color:brown;
+    background-color:rgba(192, 18, 18,.2) ;  /*a stands for opacity or transparency*/
+
+}
+
+.greentext{
+    color:skyblue;
+}
+
+/*body{
+    color:greenyellow;
+}  style applies to body defines everything within the body*/
+
+
+div>P{
+    color:black;
+    
+}
+
+div a{
+    color:maroon;
+}
+
+h1~h3{
+    color:aquamarine;
+    
+}
+
+h1~h4{
+    color:pink;
+}
+
+h4+h5{
+    color:aqua;
+}
+
